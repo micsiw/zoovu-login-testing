@@ -5,9 +5,9 @@
     "passes": 10,
     "pending": 1,
     "failures": 0,
-    "start": "2023-06-22T17:44:22.699Z",
-    "end": "2023-06-22T17:44:54.748Z",
-    "duration": 32049,
+    "start": "2023-06-22T17:59:23.180Z",
+    "end": "2023-06-22T17:59:54.821Z",
+    "duration": 31641,
     "testsRegistered": 11,
     "passPercent": 100,
     "pendingPercent": 9.090909090909092,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "b6701b33-ee3f-4bd5-9c12-79a8190fc771",
+      "uuid": "2bbb8af5-d7b0-4649-8635-c3e032de5f5a",
       "title": "",
       "fullFile": "",
       "file": "",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "300ef758-780c-4ccc-8589-7af9aff02e23",
+          "uuid": "12922ce3-d7ae-448e-bd0f-fe0c701c9f02",
           "title": "TC_01",
           "fullFile": "/home/michal/Documents/Testing/zoovu-login-testing/test/tc01.js",
           "file": "/test/tc01.js",
@@ -36,7 +36,7 @@
               "title": "\"before all\" hook in \"TC_01\"",
               "fullTitle": "TC_01 \"before all\" hook in \"TC_01\"",
               "timedOut": false,
-              "duration": 322,
+              "duration": 277,
               "state": null,
               "speed": null,
               "pass": false,
@@ -45,8 +45,8 @@
               "context": null,
               "code": "driver = await new Builder().forBrowser(\"chrome\").build();",
               "err": {},
-              "uuid": "a55684b7-9e8b-4ae6-ac32-4bcf3503f588",
-              "parentUUID": "300ef758-780c-4ccc-8589-7af9aff02e23",
+              "uuid": "242dd34f-f4d3-48f4-8572-aa0314287742",
+              "parentUUID": "12922ce3-d7ae-448e-bd0f-fe0c701c9f02",
               "isHook": true,
               "skipped": false
             }
@@ -65,8 +65,8 @@
               "context": null,
               "code": "await driver.quit()",
               "err": {},
-              "uuid": "dc12e291-eafd-49f4-8ea9-1e4daea36f35",
-              "parentUUID": "300ef758-780c-4ccc-8589-7af9aff02e23",
+              "uuid": "4b5d6e91-e13f-49a4-abf1-c43b5efe2a2d",
+              "parentUUID": "12922ce3-d7ae-448e-bd0f-fe0c701c9f02",
               "isHook": true,
               "skipped": false
             }
@@ -76,7 +76,7 @@
               "title": "Verify if user can login using valid login and valid password",
               "fullTitle": "TC_01 Verify if user can login using valid login and valid password",
               "timedOut": false,
-              "duration": 1542,
+              "duration": 1685,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -85,26 +85,26 @@
               "context": null,
               "code": "await driver.get(\"https://semantic-studio.zoovu.com/login\");\nlet title = await driver.getTitle();\nexpect(title).to.equal(\"Login | Zoovu\");\nawait driver\n  .findElement(By.name(\"username\"))\n  .sendKeys(\"vamibej309@aramask.com\");\nawait driver.findElement(By.id(\"login-password\")).sendKeys(\"123456\");\nawait driver.findElement(By.xpath(\"//*[@id='login-form']/button\")).click();\nawait driver.wait(until.titleContains(\"Studio\"));\ntitle = await driver.getTitle();\nexpect(title).to.equal(\"Zoovu Search Studio\");",
               "err": {},
-              "uuid": "2e229d4f-02e2-4986-bf2c-8f276217051a",
-              "parentUUID": "300ef758-780c-4ccc-8589-7af9aff02e23",
+              "uuid": "0d87cbac-00f1-4439-947f-39e1095b1a49",
+              "parentUUID": "12922ce3-d7ae-448e-bd0f-fe0c701c9f02",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "2e229d4f-02e2-4986-bf2c-8f276217051a"
+            "0d87cbac-00f1-4439-947f-39e1095b1a49"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 1542,
+          "duration": 1685,
           "root": false,
           "rootEmpty": false,
           "_timeout": 10000
         },
         {
-          "uuid": "0faf57f5-5d12-493e-b18b-d129233ea0cf",
+          "uuid": "4b227a2f-3aa5-4304-8aaf-fb897bbd7b4b",
           "title": "TC_02",
           "fullFile": "/home/michal/Documents/Testing/zoovu-login-testing/test/tc02.js",
           "file": "/test/tc02.js",
@@ -113,7 +113,7 @@
               "title": "\"before all\" hook in \"TC_02\"",
               "fullTitle": "TC_02 \"before all\" hook in \"TC_02\"",
               "timedOut": false,
-              "duration": 402,
+              "duration": 411,
               "state": null,
               "speed": null,
               "pass": false,
@@ -122,8 +122,8 @@
               "context": null,
               "code": "driver = await new Builder().forBrowser(\"chrome\").build();\nawait driver\n  .manage()\n  .window()\n  .setRect({ x: 0, y: 0, width: 380, height: 800 });",
               "err": {},
-              "uuid": "e6b0c5b8-34f5-4609-afaf-e97bbd722484",
-              "parentUUID": "0faf57f5-5d12-493e-b18b-d129233ea0cf",
+              "uuid": "8ef645ad-fb62-486c-beaa-e94a7e7d3670",
+              "parentUUID": "4b227a2f-3aa5-4304-8aaf-fb897bbd7b4b",
               "isHook": true,
               "skipped": false
             }
@@ -142,8 +142,8 @@
               "context": null,
               "code": "await driver.quit()",
               "err": {},
-              "uuid": "511dd47e-2165-44ce-a0bb-f57d4a424d0a",
-              "parentUUID": "0faf57f5-5d12-493e-b18b-d129233ea0cf",
+              "uuid": "8b78eb1c-c3ab-4859-8e10-4cf8a10d9f45",
+              "parentUUID": "4b227a2f-3aa5-4304-8aaf-fb897bbd7b4b",
               "isHook": true,
               "skipped": false
             }
@@ -153,7 +153,7 @@
               "title": "Verify if user can login using valid login and valid password using mobile device",
               "fullTitle": "TC_02 Verify if user can login using valid login and valid password using mobile device",
               "timedOut": false,
-              "duration": 1134,
+              "duration": 1204,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -162,26 +162,26 @@
               "context": null,
               "code": "await driver.get(\"https://semantic-studio.zoovu.com/login\");\nlet title = await driver.getTitle();\nexpect(title).to.equal(\"Login | Zoovu\");\nawait driver\n  .findElement(By.name(\"username\"))\n  .sendKeys(\"vamibej309@aramask.com\");\nawait driver.findElement(By.id(\"login-password\")).sendKeys(\"123456\");\nawait driver.findElement(By.xpath(\"//*[@id='login-form']/button\")).click();\nawait driver.wait(until.titleContains(\"Studio\"));\ntitle = await driver.getTitle();\nexpect(title).to.equal(\"Zoovu Search Studio\");",
               "err": {},
-              "uuid": "01043211-4be2-450c-879e-0218a47dcc10",
-              "parentUUID": "0faf57f5-5d12-493e-b18b-d129233ea0cf",
+              "uuid": "c18059db-febc-471a-b87b-8915c8cdfc57",
+              "parentUUID": "4b227a2f-3aa5-4304-8aaf-fb897bbd7b4b",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "01043211-4be2-450c-879e-0218a47dcc10"
+            "c18059db-febc-471a-b87b-8915c8cdfc57"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 1134,
+          "duration": 1204,
           "root": false,
           "rootEmpty": false,
           "_timeout": 10000
         },
         {
-          "uuid": "f57d971e-c2d8-420b-8bc2-2858d0d550eb",
+          "uuid": "74cd8789-f8a0-4b40-bc41-fb16c913236c",
           "title": "TC_03",
           "fullFile": "/home/michal/Documents/Testing/zoovu-login-testing/test/tc03.js",
           "file": "/test/tc03.js",
@@ -190,7 +190,7 @@
               "title": "\"before all\" hook in \"TC_03\"",
               "fullTitle": "TC_03 \"before all\" hook in \"TC_03\"",
               "timedOut": false,
-              "duration": 256,
+              "duration": 291,
               "state": null,
               "speed": null,
               "pass": false,
@@ -199,8 +199,8 @@
               "context": null,
               "code": "driver = await new Builder().forBrowser(\"chrome\").build();",
               "err": {},
-              "uuid": "1a146283-eab1-43e8-8e25-a29059253e5d",
-              "parentUUID": "f57d971e-c2d8-420b-8bc2-2858d0d550eb",
+              "uuid": "7052abe2-265f-4720-87e3-d2e38025dd90",
+              "parentUUID": "74cd8789-f8a0-4b40-bc41-fb16c913236c",
               "isHook": true,
               "skipped": false
             }
@@ -210,7 +210,7 @@
               "title": "\"after all\" hook in \"TC_03\"",
               "fullTitle": "TC_03 \"after all\" hook in \"TC_03\"",
               "timedOut": false,
-              "duration": 51,
+              "duration": 52,
               "state": null,
               "speed": null,
               "pass": false,
@@ -219,8 +219,8 @@
               "context": null,
               "code": "await driver.quit()",
               "err": {},
-              "uuid": "c36a7f00-45a0-449c-898b-d414102ea8e9",
-              "parentUUID": "f57d971e-c2d8-420b-8bc2-2858d0d550eb",
+              "uuid": "b949a126-a94e-4fac-8b20-bdde05fc9989",
+              "parentUUID": "74cd8789-f8a0-4b40-bc41-fb16c913236c",
               "isHook": true,
               "skipped": false
             }
@@ -239,8 +239,8 @@
               "context": null,
               "code": "",
               "err": {},
-              "uuid": "077a35ec-a28d-439c-a016-022ae91600bd",
-              "parentUUID": "f57d971e-c2d8-420b-8bc2-2858d0d550eb",
+              "uuid": "292d6b91-88e3-402b-825b-fd75fd7ba88c",
+              "parentUUID": "74cd8789-f8a0-4b40-bc41-fb16c913236c",
               "isHook": false,
               "skipped": false
             }
@@ -249,7 +249,7 @@
           "passes": [],
           "failures": [],
           "pending": [
-            "077a35ec-a28d-439c-a016-022ae91600bd"
+            "292d6b91-88e3-402b-825b-fd75fd7ba88c"
           ],
           "skipped": [],
           "duration": 0,
@@ -258,7 +258,7 @@
           "_timeout": 10000
         },
         {
-          "uuid": "3c642d5b-e7cc-451e-a4c5-54130fb30e76",
+          "uuid": "7e9f500f-c8ff-4928-86f2-462c241d137e",
           "title": "TC_04",
           "fullFile": "/home/michal/Documents/Testing/zoovu-login-testing/test/tc04.js",
           "file": "/test/tc04.js",
@@ -267,7 +267,7 @@
               "title": "\"before all\" hook in \"TC_04\"",
               "fullTitle": "TC_04 \"before all\" hook in \"TC_04\"",
               "timedOut": false,
-              "duration": 288,
+              "duration": 256,
               "state": null,
               "speed": null,
               "pass": false,
@@ -276,8 +276,8 @@
               "context": null,
               "code": "driver = await new Builder().forBrowser(\"chrome\").build();",
               "err": {},
-              "uuid": "963f9397-310d-4490-9fec-0723b7db4a9e",
-              "parentUUID": "3c642d5b-e7cc-451e-a4c5-54130fb30e76",
+              "uuid": "3be0608d-a1b7-420c-8a74-e3874a7317d6",
+              "parentUUID": "7e9f500f-c8ff-4928-86f2-462c241d137e",
               "isHook": true,
               "skipped": false
             }
@@ -296,8 +296,8 @@
               "context": null,
               "code": "await driver.quit()",
               "err": {},
-              "uuid": "08d484cc-803f-4889-aade-750f9f48e3bb",
-              "parentUUID": "3c642d5b-e7cc-451e-a4c5-54130fb30e76",
+              "uuid": "ebb879d9-fc07-43ca-8990-9df01e2b3bdb",
+              "parentUUID": "7e9f500f-c8ff-4928-86f2-462c241d137e",
               "isHook": true,
               "skipped": false
             }
@@ -307,7 +307,7 @@
               "title": "Verify if user can confirm login credentials by pressing enter key",
               "fullTitle": "TC_04 Verify if user can confirm login credentials by pressing enter key",
               "timedOut": false,
-              "duration": 1145,
+              "duration": 1100,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -316,26 +316,26 @@
               "context": null,
               "code": "await driver.get(\"https://semantic-studio.zoovu.com/login\");\nlet title = await driver.getTitle();\nexpect(title).to.equal(\"Login | Zoovu\");\nawait driver\n  .findElement(By.name(\"username\"))\n  .sendKeys(\"vamibej309@aramask.com\");\nawait driver\n  .findElement(By.id(\"login-password\"))\n  .sendKeys(\"123456\", Key.RETURN);\nawait driver.wait(until.titleContains(\"Studio\"));\ntitle = await driver.getTitle();\nexpect(title).to.equal(\"Zoovu Search Studio\");",
               "err": {},
-              "uuid": "9f317c76-e32e-4389-8be4-63f701426142",
-              "parentUUID": "3c642d5b-e7cc-451e-a4c5-54130fb30e76",
+              "uuid": "cd7ec9f6-211e-403b-8c88-848128c6e549",
+              "parentUUID": "7e9f500f-c8ff-4928-86f2-462c241d137e",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "9f317c76-e32e-4389-8be4-63f701426142"
+            "cd7ec9f6-211e-403b-8c88-848128c6e549"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 1145,
+          "duration": 1100,
           "root": false,
           "rootEmpty": false,
           "_timeout": 10000
         },
         {
-          "uuid": "db07a479-7590-4103-9bc3-15228ff9721c",
+          "uuid": "c575e585-c59b-4b9f-9f5e-49c71b4825f8",
           "title": "TC_05",
           "fullFile": "/home/michal/Documents/Testing/zoovu-login-testing/test/tc05.js",
           "file": "/test/tc05.js",
@@ -344,7 +344,7 @@
               "title": "\"before all\" hook in \"TC_05\"",
               "fullTitle": "TC_05 \"before all\" hook in \"TC_05\"",
               "timedOut": false,
-              "duration": 255,
+              "duration": 291,
               "state": null,
               "speed": null,
               "pass": false,
@@ -353,8 +353,8 @@
               "context": null,
               "code": "driver = await new Builder().forBrowser(\"chrome\").build();",
               "err": {},
-              "uuid": "139bd156-e508-4644-a1e7-9705237b7dbf",
-              "parentUUID": "db07a479-7590-4103-9bc3-15228ff9721c",
+              "uuid": "52f4a1d0-c52c-4325-a1b5-ea7b95e9732c",
+              "parentUUID": "c575e585-c59b-4b9f-9f5e-49c71b4825f8",
               "isHook": true,
               "skipped": false
             }
@@ -364,7 +364,7 @@
               "title": "\"after all\" hook in \"TC_05\"",
               "fullTitle": "TC_05 \"after all\" hook in \"TC_05\"",
               "timedOut": false,
-              "duration": 52,
+              "duration": 53,
               "state": null,
               "speed": null,
               "pass": false,
@@ -373,8 +373,8 @@
               "context": null,
               "code": "await driver.quit()",
               "err": {},
-              "uuid": "5bf488b4-c274-4359-839c-f985ba5f02e0",
-              "parentUUID": "db07a479-7590-4103-9bc3-15228ff9721c",
+              "uuid": "ca9376b8-d7ee-4b84-84a0-b8516e5ed9b8",
+              "parentUUID": "c575e585-c59b-4b9f-9f5e-49c71b4825f8",
               "isHook": true,
               "skipped": false
             }
@@ -384,35 +384,35 @@
               "title": "Verify if user can login using invalid login and valid password",
               "fullTitle": "TC_05 Verify if user can login using invalid login and valid password",
               "timedOut": false,
-              "duration": 3531,
+              "duration": 3425,
               "state": "passed",
               "speed": "slow",
               "pass": true,
               "fail": false,
               "pending": false,
               "context": null,
-              "code": "await driver.get(\"https://semantic-studio.zoovu.com/login\");\nlet title = await driver.getTitle();\nexpect(title).to.equal(\"Login | Zoovu\");\nawait driver\n  .findElement(By.name(\"username\"))\n  .sendKeys(\"vamibej309@aramask.com\");\nawait driver.findElement(By.id(\"login-password\")).sendKeys(\"654321\");\nawait driver.findElement(By.xpath(\"//*[@id='login-form']/button\")).click();\nawait new Promise((resolve) => setTimeout(resolve, 3000));\ntitle = await driver.getTitle();\nexpect(title).to.equal(\"Login | Zoovu\");",
+              "code": "await driver.get(\"https://semantic-studio.zoovu.com/login\");\nlet title = await driver.getTitle();\nexpect(title).to.equal(\"Login | Zoovu\");\nawait driver\n  .findElement(By.name(\"username\"))\n  .sendKeys(\"vamibej209@aramask.com\");\nawait driver.findElement(By.id(\"login-password\")).sendKeys(\"654321\");\nawait driver.findElement(By.xpath(\"//*[@id='login-form']/button\")).click();\nawait new Promise((resolve) => setTimeout(resolve, 3000));\ntitle = await driver.getTitle();\nexpect(title).to.equal(\"Login | Zoovu\");",
               "err": {},
-              "uuid": "fea31964-dd53-415e-8e60-68738914dcbc",
-              "parentUUID": "db07a479-7590-4103-9bc3-15228ff9721c",
+              "uuid": "18ff594c-72c5-4314-a734-878b485f0f51",
+              "parentUUID": "c575e585-c59b-4b9f-9f5e-49c71b4825f8",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "fea31964-dd53-415e-8e60-68738914dcbc"
+            "18ff594c-72c5-4314-a734-878b485f0f51"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 3531,
+          "duration": 3425,
           "root": false,
           "rootEmpty": false,
           "_timeout": 10000
         },
         {
-          "uuid": "bd7b2d3e-4ce3-48ce-9cbf-9583e3bab39f",
+          "uuid": "10f0a87e-8cf6-4d33-8266-71888720bfa3",
           "title": "TC_06",
           "fullFile": "/home/michal/Documents/Testing/zoovu-login-testing/test/tc06.js",
           "file": "/test/tc06.js",
@@ -421,7 +421,7 @@
               "title": "\"before all\" hook in \"TC_06\"",
               "fullTitle": "TC_06 \"before all\" hook in \"TC_06\"",
               "timedOut": false,
-              "duration": 254,
+              "duration": 250,
               "state": null,
               "speed": null,
               "pass": false,
@@ -430,8 +430,8 @@
               "context": null,
               "code": "driver = await new Builder().forBrowser(\"chrome\").build();",
               "err": {},
-              "uuid": "71b19996-3738-46b9-b316-8b740b9a4687",
-              "parentUUID": "bd7b2d3e-4ce3-48ce-9cbf-9583e3bab39f",
+              "uuid": "8c36e2a2-e5aa-43ae-9b2c-e49012c0ad28",
+              "parentUUID": "10f0a87e-8cf6-4d33-8266-71888720bfa3",
               "isHook": true,
               "skipped": false
             }
@@ -450,8 +450,8 @@
               "context": null,
               "code": "await driver.quit()",
               "err": {},
-              "uuid": "41cb2364-bfdd-4055-aa2e-983dc6f03d6a",
-              "parentUUID": "bd7b2d3e-4ce3-48ce-9cbf-9583e3bab39f",
+              "uuid": "02162649-5b32-4efc-a263-c17bf67cd300",
+              "parentUUID": "10f0a87e-8cf6-4d33-8266-71888720bfa3",
               "isHook": true,
               "skipped": false
             }
@@ -461,35 +461,35 @@
               "title": "Verify if user can login using valid login and invalid password",
               "fullTitle": "TC_06 Verify if user can login using valid login and invalid password",
               "timedOut": false,
-              "duration": 3444,
+              "duration": 3424,
               "state": "passed",
               "speed": "slow",
               "pass": true,
               "fail": false,
               "pending": false,
               "context": null,
-              "code": "await driver.get(\"https://semantic-studio.zoovu.com/login\");\nlet title = await driver.getTitle();\nexpect(title).to.equal(\"Login | Zoovu\");\nawait driver\n  .findElement(By.name(\"username\"))\n  .sendKeys(\"vamibej209@aramask.com\");\nawait driver.findElement(By.id(\"login-password\")).sendKeys(\"123456\");\nawait driver.findElement(By.xpath(\"//*[@id='login-form']/button\")).click();\nawait new Promise((resolve) => setTimeout(resolve, 3000));\ntitle = await driver.getTitle();\nexpect(title).to.equal(\"Login | Zoovu\");",
+              "code": "await driver.get(\"https://semantic-studio.zoovu.com/login\");\nlet title = await driver.getTitle();\nexpect(title).to.equal(\"Login | Zoovu\");\nawait driver\n  .findElement(By.name(\"username\"))\n  .sendKeys(\"vamibej209@aramask.com\");\nawait driver.findElement(By.id(\"login-password\")).sendKeys(\"654321\");\nawait driver.findElement(By.xpath(\"//*[@id='login-form']/button\")).click();\nawait new Promise((resolve) => setTimeout(resolve, 3000));\ntitle = await driver.getTitle();\nexpect(title).to.equal(\"Login | Zoovu\");",
               "err": {},
-              "uuid": "ce4527da-9b8a-4282-8c2f-62892150aff8",
-              "parentUUID": "bd7b2d3e-4ce3-48ce-9cbf-9583e3bab39f",
+              "uuid": "e39520fa-9ac0-4f0c-8971-8a718df7bb81",
+              "parentUUID": "10f0a87e-8cf6-4d33-8266-71888720bfa3",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "ce4527da-9b8a-4282-8c2f-62892150aff8"
+            "e39520fa-9ac0-4f0c-8971-8a718df7bb81"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 3444,
+          "duration": 3424,
           "root": false,
           "rootEmpty": false,
           "_timeout": 10000
         },
         {
-          "uuid": "88fbe723-01d2-4bbc-bdb9-34be8e426fea",
+          "uuid": "bcbf4897-3fb6-40e7-8f8f-974358fd4ae9",
           "title": "TC_06",
           "fullFile": "/home/michal/Documents/Testing/zoovu-login-testing/test/tc07.js",
           "file": "/test/tc07.js",
@@ -500,7 +500,7 @@
               "title": "Verify if user can login using admin@zoovu.com login and 123456 password",
               "fullTitle": "TC_06 Verify if user can login using admin@zoovu.com login and 123456 password",
               "timedOut": false,
-              "duration": 3734,
+              "duration": 3699,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -509,8 +509,8 @@
               "context": null,
               "code": "driver = await new Builder().forBrowser(\"chrome\").build();\nawait driver.get(\"https://semantic-studio.zoovu.com/login\");\nlet title = await driver.getTitle();\nexpect(title).to.equal(\"Login | Zoovu\");\nawait driver.findElement(By.name(\"username\")).sendKeys(login);\nawait driver.findElement(By.id(\"login-password\")).sendKeys(password);\nawait driver\n  .findElement(By.xpath(\"//*[@id='login-form']/button\"))\n  .click();\nawait new Promise((resolve) => setTimeout(resolve, 3000));\ntitle = await driver.getTitle();\nexpect(title).to.equal(\"Login | Zoovu\");\nawait driver.quit();",
               "err": {},
-              "uuid": "d315ed04-5318-40f2-9860-fd4e4c7c9539",
-              "parentUUID": "88fbe723-01d2-4bbc-bdb9-34be8e426fea",
+              "uuid": "aca4d20f-b146-4943-8ca7-64e4594b5308",
+              "parentUUID": "bcbf4897-3fb6-40e7-8f8f-974358fd4ae9",
               "isHook": false,
               "skipped": false
             },
@@ -518,7 +518,7 @@
               "title": "Verify if user can login using admin@zoovu.com login and admin password",
               "fullTitle": "TC_06 Verify if user can login using admin@zoovu.com login and admin password",
               "timedOut": false,
-              "duration": 3845,
+              "duration": 3770,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -527,8 +527,8 @@
               "context": null,
               "code": "driver = await new Builder().forBrowser(\"chrome\").build();\nawait driver.get(\"https://semantic-studio.zoovu.com/login\");\nlet title = await driver.getTitle();\nexpect(title).to.equal(\"Login | Zoovu\");\nawait driver.findElement(By.name(\"username\")).sendKeys(login);\nawait driver.findElement(By.id(\"login-password\")).sendKeys(password);\nawait driver\n  .findElement(By.xpath(\"//*[@id='login-form']/button\"))\n  .click();\nawait new Promise((resolve) => setTimeout(resolve, 3000));\ntitle = await driver.getTitle();\nexpect(title).to.equal(\"Login | Zoovu\");\nawait driver.quit();",
               "err": {},
-              "uuid": "f588ffd6-b2b4-4ebf-983b-a4cbcdde5992",
-              "parentUUID": "88fbe723-01d2-4bbc-bdb9-34be8e426fea",
+              "uuid": "55357b3a-227c-4539-8894-d2aa804729b8",
+              "parentUUID": "bcbf4897-3fb6-40e7-8f8f-974358fd4ae9",
               "isHook": false,
               "skipped": false
             },
@@ -536,7 +536,7 @@
               "title": "Verify if user can login using admin@zoovu.com login and admin123 password",
               "fullTitle": "TC_06 Verify if user can login using admin@zoovu.com login and admin123 password",
               "timedOut": false,
-              "duration": 3970,
+              "duration": 3757,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -545,8 +545,8 @@
               "context": null,
               "code": "driver = await new Builder().forBrowser(\"chrome\").build();\nawait driver.get(\"https://semantic-studio.zoovu.com/login\");\nlet title = await driver.getTitle();\nexpect(title).to.equal(\"Login | Zoovu\");\nawait driver.findElement(By.name(\"username\")).sendKeys(login);\nawait driver.findElement(By.id(\"login-password\")).sendKeys(password);\nawait driver\n  .findElement(By.xpath(\"//*[@id='login-form']/button\"))\n  .click();\nawait new Promise((resolve) => setTimeout(resolve, 3000));\ntitle = await driver.getTitle();\nexpect(title).to.equal(\"Login | Zoovu\");\nawait driver.quit();",
               "err": {},
-              "uuid": "208b1098-83b3-434f-9a10-0a2f788b3940",
-              "parentUUID": "88fbe723-01d2-4bbc-bdb9-34be8e426fea",
+              "uuid": "036c7b10-9755-4cbd-9c36-84b0baec8b50",
+              "parentUUID": "bcbf4897-3fb6-40e7-8f8f-974358fd4ae9",
               "isHook": false,
               "skipped": false
             },
@@ -554,7 +554,7 @@
               "title": "Verify if user can login using example@example.com login and 123456 password",
               "fullTitle": "TC_06 Verify if user can login using example@example.com login and 123456 password",
               "timedOut": false,
-              "duration": 3838,
+              "duration": 3732,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -563,8 +563,8 @@
               "context": null,
               "code": "driver = await new Builder().forBrowser(\"chrome\").build();\nawait driver.get(\"https://semantic-studio.zoovu.com/login\");\nlet title = await driver.getTitle();\nexpect(title).to.equal(\"Login | Zoovu\");\nawait driver.findElement(By.name(\"username\")).sendKeys(login);\nawait driver.findElement(By.id(\"login-password\")).sendKeys(password);\nawait driver\n  .findElement(By.xpath(\"//*[@id='login-form']/button\"))\n  .click();\nawait new Promise((resolve) => setTimeout(resolve, 3000));\ntitle = await driver.getTitle();\nexpect(title).to.equal(\"Login | Zoovu\");\nawait driver.quit();",
               "err": {},
-              "uuid": "e0e89cfa-ca42-4f92-84c9-faab3a41fb43",
-              "parentUUID": "88fbe723-01d2-4bbc-bdb9-34be8e426fea",
+              "uuid": "6fddd005-fdb9-4aea-a156-4f449459b85c",
+              "parentUUID": "bcbf4897-3fb6-40e7-8f8f-974358fd4ae9",
               "isHook": false,
               "skipped": false
             },
@@ -572,7 +572,7 @@
               "title": "Verify if user can login using example@example.com login and qwerty password",
               "fullTitle": "TC_06 Verify if user can login using example@example.com login and qwerty password",
               "timedOut": false,
-              "duration": 3771,
+              "duration": 3749,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -581,24 +581,24 @@
               "context": null,
               "code": "driver = await new Builder().forBrowser(\"chrome\").build();\nawait driver.get(\"https://semantic-studio.zoovu.com/login\");\nlet title = await driver.getTitle();\nexpect(title).to.equal(\"Login | Zoovu\");\nawait driver.findElement(By.name(\"username\")).sendKeys(login);\nawait driver.findElement(By.id(\"login-password\")).sendKeys(password);\nawait driver\n  .findElement(By.xpath(\"//*[@id='login-form']/button\"))\n  .click();\nawait new Promise((resolve) => setTimeout(resolve, 3000));\ntitle = await driver.getTitle();\nexpect(title).to.equal(\"Login | Zoovu\");\nawait driver.quit();",
               "err": {},
-              "uuid": "ddd18734-ea09-4b50-b94a-9e2d231d8c77",
-              "parentUUID": "88fbe723-01d2-4bbc-bdb9-34be8e426fea",
+              "uuid": "7c3954e2-db0a-4354-92ba-d0a7ede50380",
+              "parentUUID": "bcbf4897-3fb6-40e7-8f8f-974358fd4ae9",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "d315ed04-5318-40f2-9860-fd4e4c7c9539",
-            "f588ffd6-b2b4-4ebf-983b-a4cbcdde5992",
-            "208b1098-83b3-434f-9a10-0a2f788b3940",
-            "e0e89cfa-ca42-4f92-84c9-faab3a41fb43",
-            "ddd18734-ea09-4b50-b94a-9e2d231d8c77"
+            "aca4d20f-b146-4943-8ca7-64e4594b5308",
+            "55357b3a-227c-4539-8894-d2aa804729b8",
+            "036c7b10-9755-4cbd-9c36-84b0baec8b50",
+            "6fddd005-fdb9-4aea-a156-4f449459b85c",
+            "7c3954e2-db0a-4354-92ba-d0a7ede50380"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 19158,
+          "duration": 18707,
           "root": false,
           "rootEmpty": false,
           "_timeout": 10000
