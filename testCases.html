@@ -3,7 +3,151 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styling.css" />
     <title>Test cases</title>
   </head>
-  <body></body>
+  <body>
+    <h1 class="title">Test cases</h1>
+    <p class="test-info">
+      Tested component:
+      <a href="https://semantic-studio.zoovu.com/login" target="_blank"
+        >Semantic studio login page</a
+      >
+    </p>
+    <table>
+      <tr>
+        <th>ID</th>
+        <th>Description</th>
+        <th>Steps</th>
+        <th>Browser version</th>
+        <th>Data</th>
+        <th>Expected result</th>
+        <th>Actual result</th>
+        <th>Test status</th>
+      </tr>
+      <tr>
+        <td>TC_01</td>
+        <td>Verify if user can login using valid login and valid password</td>
+        <td>
+          <ol>
+            <li>Load login page</li>
+            <li>Enter login and password</li>
+            <li>Click login button</li>
+          </ol>
+        </td>
+        <td>Chrome Version 114.0.5735.133</td>
+        <td>login:<br />password:</td>
+        <td>User should be granted access to app</td>
+        <td>As expected</td>
+        <td class="status-approved">&#10003;</td>
+      </tr>
+      <tr>
+        <td>TC_02</td>
+        <td>
+          Verify if user can login using valid login and valid password using
+          mobile device
+        </td>
+        <td>
+          <ol>
+            <li>Emulate mobile browser</li>
+            <li>Load login page</li>
+            <li>Enter login and password</li>
+            <li>Click login button</li>
+          </ol>
+        </td>
+        <td>Chrome Version 114.0.5735.133</td>
+        <td>login:<br />password:</td>
+        <td>User should be granted access to app</td>
+        <td>As expected</td>
+        <td class="status-approved">&#10003;</td>
+      </tr>
+      <tr>
+        <td>TC_03</td>
+        <td>Verify if user is remembered after successful login</td>
+        <td>
+          <ol>
+            <li>Load login page</li>
+            <li>Enter login and password</li>
+            <li>Click login button</li>
+            <li>Close browser</li>
+            <li>Load login page again</li>
+          </ol>
+        </td>
+        <td>Chrome Version 114.0.5735.133</td>
+        <td>login:<br />password:</td>
+        <td>User should be logged automatically after browser reopen</td>
+        <td>As expected</td>
+        <td class="status-approved">&#10003;</td>
+      </tr>
+      <tr>
+        <td>TC_04</td>
+        <td>
+          Verify if user can confirm login credentials by pressing enter key
+        </td>
+        <td>
+          <ol>
+            <li>Load login page</li>
+            <li>Enter login and password</li>
+            <li>Click enter key</li>
+          </ol>
+        </td>
+        <td>Chrome Version 114.0.5735.133</td>
+        <td>login:<br />password:</td>
+        <td>User should be granted access to app</td>
+        <td>As expected</td>
+        <td class="status-approved">&#10003;</td>
+      </tr>
+      <tr>
+        <td>TC_05</td>
+        <td>Verify if user can login using invalid login and valid password</td>
+        <td>
+          <ol>
+            <li>Load login page</li>
+            <li>Enter login and password</li>
+            <li>Click login button</li>
+          </ol>
+        </td>
+        <td>Chrome Version 114.0.5735.133</td>
+        <td>login:<br />password:</td>
+        <td>User should NOT be granted access to app</td>
+        <td>As expected</td>
+        <td class="status-approved">&#10003;</td>
+      </tr>
+      <tr>
+        <td>TC_06</td>
+        <td>Verify if user can login using valid login and invalid password</td>
+        <td>
+          <ol>
+            <li>Load login page</li>
+            <li>Enter login and password</li>
+            <li>Click login button</li>
+          </ol>
+        </td>
+        <td>Chrome Version 114.0.5735.133</td>
+        <td>login:<br />password:</td>
+        <td>User should NOT be granted access to app</td>
+        <td>As expected</td>
+        <td class="status-approved">&#10003;</td>
+      </tr>
+      <tr>
+        <td>TC_07</td>
+        <td>
+          Verify if login page won't allow access after using some random or
+          popular credentials
+        </td>
+        <td>
+          <ol>
+            <li>Load login page</li>
+            <li>Enter login and password</li>
+            <li>Click login button</li>
+          </ol>
+        </td>
+        <td>Chrome Version 114.0.5735.133</td>
+        <td>login:<br />password:</td>
+        <td>User should NOT be granted access to app</td>
+        <td>As expected</td>
+        <td class="status-approved">&#10003;</td>
+      </tr>
+    </table>
+  </body>
 </html>
