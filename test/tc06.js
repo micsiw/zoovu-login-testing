@@ -19,7 +19,7 @@ describe("TC_06", function () {
     await driver
       .findElement(By.name("username"))
       .sendKeys("vamibej209@aramask.com");
-    await driver.findElement(By.id("login-password")).sendKeys("123456");
+    await driver.findElement(By.id("login-password")).sendKeys("654321");
     await driver.findElement(By.xpath("//*[@id='login-form']/button")).click();
 
     await new Promise((resolve) => setTimeout(resolve, 3000));
