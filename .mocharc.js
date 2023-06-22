@@ -4,7 +4,7 @@ module.exports = {
     "overwrite=true",
     "reportTitle=Report summary",
     "reportFilename=test-report",
-    "reportDir=[cwd]/report",
+    "reportDir=report",
     "autoOpen=true",
   ],
 };
