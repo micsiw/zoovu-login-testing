@@ -10,7 +10,7 @@ describe("TC_05", function () {
 
   after(async () => await driver.quit());
 
-  it("Verify if user can login using invalid login and valid password", async function () {
+  it("Verify if user can login using valid login and invalid password", async function () {
     await driver.get("https://semantic-studio.zoovu.com/login");
 
     let title = await driver.getTitle();

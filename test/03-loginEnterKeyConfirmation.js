@@ -1,7 +1,7 @@
 const { By, Builder, until, Key } = require("selenium-webdriver");
 const expect = require("chai").expect;
 
-describe("TC_04", function () {
+describe("TC_03", function () {
   let driver;
 
   before(async function () {
